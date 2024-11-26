@@ -1,0 +1,7 @@
+# request should return 200
+GET http://localhost:1111/apigw/api/v1/exapp/get-users
+
+###
+
+# request should return 500 Internal Server Error
+GET http://localhost:1111/api/v1/not-allowed

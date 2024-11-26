@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+    app.external.dmz:
+      build: .
+      container_name: app.external.dmz 
+      ports:
+      - 21999:21999
+      networks:
+      - external_network
+
+networks:
+  external_network:
+    external: true
+
+  

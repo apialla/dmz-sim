@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+    app.internal.dmz:
+      build: .
+      container_name: app.internal.dmz 
+      ports:
+      - 1111:1111
+      networks:
+      - internal_network
+
+networks:
+  internal_network:
+    external: true
+
+  

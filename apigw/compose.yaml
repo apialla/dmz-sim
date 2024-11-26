@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+    apigw:
+      build: .
+      container_name: apigw
+      ports:
+      - 9999:9999
+      networks:
+      - external_network
+      - internal_network
+
+networks:
+  external_network:
+    external: true
+  internal_network:
+    external: true
+
+  
